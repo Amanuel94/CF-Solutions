@@ -42,7 +42,7 @@ def bs(low=1, high=1, key = lambda x: True):
 
 def main():
     n  = int(input())
-    
+        
 
     b = [0]*n
     m = {}
@@ -57,7 +57,7 @@ def main():
         sys.stdout.flush()
 
         b[i] = ii()
-        
+            
         if b[i] in m:
             bi = i
             bj = m[b[i]]
@@ -74,7 +74,7 @@ def main():
         sys.stdout.flush()
         print()
         x = ii()
-        
+            
         b[0] = x ^ b[bi]
     
     else:
@@ -82,12 +82,12 @@ def main():
         sys.stdout.flush()
         print()
         x1 = ii()
-        
+            
         print(f"AND 1 {cj + 1}")
         sys.stdout.flush()
         print()
         x2 = ii()
-        
+            
     
         b[0] = x1 + x2
     
